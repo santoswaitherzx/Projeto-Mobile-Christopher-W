@@ -8,22 +8,21 @@ import { ThemedView } from '@/components/ThemedView';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#A1CEDC', dark: '#fbfbfb' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
+          source={require('@/assets/images/download MERCADOR.png')}
           style={styles.reactLogo}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">Mercado Pago!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+        <ThemedText type="subtitle">SUA RENDA DE SALARIO: 10.000</ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
+          ACESSE SEUS CARTÕES: <ThemedText type="defaultSemiBold"> ESTÃO TODOS LIBERADOS!</ThemedText> 
           <ThemedText type="defaultSemiBold">
             {Platform.select({
               ios: 'cmd + d',
@@ -31,11 +30,10 @@ export default function HomeScreen() {
               web: 'F12'
             })}
           </ThemedText>{' '}
-          to open developer tools.
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle"></ThemedText>
         <ThemedText>
           Tap the Explore tab to learn more about what's included in this starter app.
         </ThemedText>
