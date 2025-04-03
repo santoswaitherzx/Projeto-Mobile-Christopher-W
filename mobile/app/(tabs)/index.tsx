@@ -8,7 +8,7 @@ import { ThemedView } from '@/components/ThemedView';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#fbfbfb' }}
+      headerBackgroundColor={{ light: '#A1CEDC' , dark: '#fefcfc' }}
       headerImage={
         <Image
           source={require('@/assets/images/download MERCADOR.png')}
@@ -16,7 +16,7 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Mercado Pago!</ThemedText>
+        <ThemedText type="title">MERCADO PAGO!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -27,7 +27,7 @@ export default function HomeScreen() {
             {Platform.select({
               ios: 'cmd + d',
               android: 'cmd + m',
-              web: 'F12'
+              web: ''
             })}
           </ThemedText>{' '}
         </ThemedText>
@@ -35,17 +35,17 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle"></ThemedText>
         <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
+          PIX CADASTRADO : XXXXXXXX@gmail.com
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
+        <ThemedText type="subtitle">DINHEIRO GUARDADO NO SEU BANCO :</ThemedText>
         <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
+          R$ 05.000,00 : CLIQUE AQUI PARA RETIRA : {' '}
+          <ThemedText type="defaultSemiBold">www.retire.seu.dinheiro.reserva.www</ThemedText> {' '}
+          <ThemedText type="defaultSemiBold"></ThemedText> {' '}
+          <ThemedText type="defaultSemiBold"></ThemedText> {' '}
+          <ThemedText type="defaultSemiBold"></ThemedText>
         </ThemedText>
       </ThemedView>
     </ParallaxScrollView>
