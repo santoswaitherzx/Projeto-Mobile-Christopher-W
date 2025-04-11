@@ -1,4 +1,5 @@
 import { Image, StyleSheet, Platform } from 'react-native';
+import {Alert, Button,  View} from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -22,7 +23,14 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">SUA RENDA DE SALARIO: 10.000</ThemedText>
         <ThemedText>
-          ACESSE SEUS CARTÕES: <ThemedText type="defaultSemiBold"> ESTÃO TODOS LIBERADOS!</ThemedText> 
+           <ThemedText type="defaultSemiBold">FAÇA SUAS TRANSFERENCIAS</ThemedText> 
+
+           <Button 
+        onPress={() =>{
+          console.log('ciclo da vida');
+        }}
+        title='TRANSFERIR PELO PIX' 
+        />
           <ThemedText type="defaultSemiBold">
             {Platform.select({
               ios: 'cmd + d',
@@ -41,12 +49,18 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">DINHEIRO GUARDADO NO SEU BANCO :</ThemedText>
         <ThemedText>
-          R$ 05.000,00 : CLIQUE AQUI PARA RETIRA : {' '}
-          <ThemedText type="defaultSemiBold">www.retire.seu.dinheiro.reserva.www</ThemedText> {' '}
+          R$ 5.000,00 : CLIQUE AQUI PARA RETIRA : {' '}
+          <ThemedText type="defaultSemiBold"></ThemedText> {' '}
           <ThemedText type="defaultSemiBold"></ThemedText> {' '}
           <ThemedText type="defaultSemiBold"></ThemedText> {' '}
           <ThemedText type="defaultSemiBold"></ThemedText>
         </ThemedText>
+        <Button 
+        onPress={() =>{
+          console.log('ciclo da vida');
+        }}
+        title='www.retire.seu.dinheiro.reserva.www'
+        />
       </ThemedView>
     </ParallaxScrollView>
   );
